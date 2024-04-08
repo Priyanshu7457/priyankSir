@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  text-transform: uppercase;
+  width: 100vw;
+  height: 90px;
+  background-color: #a9606024;
+}
+
+header > div {
+  border: 2px solid black;
+  border-radius: 100%;
+  margin-left: 30px;
+  height: 80px;
+  width: 80px;
+}
+
+header > div > img {
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: 80px;
+  width: 80px;
+}
+
+header > p {
+  width: 100%;
+  font-size: 40px;
+  margin: auto;
+  text-align: center;
+}
+
+.image {
+  display: flex;
+  height: 120px;
+  border: 2px solid black;
+}
+
+.image > img {
+  object-position: center;
+  height: 120px;
+  width: 100vw;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main > section {
+  height: 400px;
+  width: 500px;
+  border-radius: 40px;
+}
+
+.subject {
+  box-shadow: 2px 2px 20px aqua;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 400px;
+}
+
+.subject > .links {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.subject > .links > ul > li {
+  margin: 20px;
+}
+
+.subject > .links > ul > li > a {
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.visionBox {
+  height: 400px;
+  padding: 10px;
+  box-shadow: 2px 2px 20px lime;
+}
+
+.visionBox > .box {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.visionBox > .box > div {
+  width: 49%;
+}
+
+.visionBox > .list {
+  padding: 10px;
+}
+.visionBox > .box > .list > ul > li {
+  font-size: 17px;
+  margin: 5px;
+}
+.visionBox > .box > .Timage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.visionBox > .box > .Timage > img {
+  border-radius: 100%;
+}
+footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer > div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1100px) {
+  main {
+    flex-direction: column-reverse;
+  }
+
+  main > section {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .image > img {
+    width: 310px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .image > img {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .image > img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .image > img {
+    width: 165px;
+  }
+
+  main > section {
+    width: 400px;
+    height: 400px;
+  }
+  .visionBox > .box > .list > ul > li {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .image > img {
+    width: 100px;
+  }
+  .visionBox > .box > .list > ul > li {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  header > p {
+    font-size: 25px;
+  }
+
+  main > section {
+    width: 350px;
+    height: 400px;
+  }
+  .visionBox > .box > .list > ul > li {
+    font-size: 13px;
+  }
+
+  .image > img {
+    width: 120px;
+  }
+}
