@@ -38,12 +38,14 @@ header > p {
   display: flex;
   height: 120px;
   border: 2px solid black;
+  justify-content: center;
+  align-items: center;
 }
 
-.image > img {
+.image > marquee > img {
   object-position: center;
   height: 120px;
-  width: 100vw;
+  width: 40vw;
 }
 
 main {
